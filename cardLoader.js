@@ -3,7 +3,7 @@ var trSqObjs = [];
 
 async function init()
 {
-	await fetch('object.json').then(response => response.text()).then((data) => { objectData = JSON.parse(data); });
+	await fetch('./object.json').then(response => response.text()).then((data) => { objectData = JSON.parse(data); });
 	for (var key in objectData.objects)
 	{
 

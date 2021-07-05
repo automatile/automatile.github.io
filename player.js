@@ -43,7 +43,7 @@ function getMap(mapType, data)
 
 async function init()
 {
-	await fetch('http://localhost:5500/object.json').then(response => response.text()).then((data) => { objectData = JSON.parse(data); });
+	await fetch('./object.json').then(response => response.text()).then((data) => { objectData = JSON.parse(data); });
 	const urlParams = new URLSearchParams(window.location.search);
 	const myParam = urlParams.get('id');
 	JSON.parse(JSON.stringify(objectData), (key, value) =>
