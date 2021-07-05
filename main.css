@@ -92,6 +92,12 @@ canvas {
 	font-weight: 300;
 	text-align: center;
 }
+.headbar {
+	position: fixed;
+	width: 100%;
+	height: 8px;
+	background: linear-gradient(90deg, #00ffff 0%,#bfff00 33%,#ffbf00 67%,#ff00ff 100%);
+}
 a {
 	text-decoration: none;
 }

@@ -96,9 +96,26 @@
 				"slideY": 0,
 				"scale": 50,
 				"initOffsetX": 375,
-				"initOffsetY": 175
+				"initOffsetY": 150
 			},
 			"info": "5o$4o$o3bo",
+			"type": "Oscillator",
+			"period": 3
+		},
+		"_98367241": {
+			"name": "Blinker 2",
+			"environment": {
+				"tiling": "Truncated Square",
+				"rule": "B3/S23"
+			},
+			"camera": {
+				"slideX": 0,
+				"slideY": 0,
+				"scale": 50,
+				"initOffsetX": 425,
+				"initOffsetY": 150
+			},
+			"info": "2bo2b2o$6o$2o2bo",
 			"type": "Oscillator",
 			"period": 3
 		}
