@@ -107,9 +107,6 @@ async function loadCanvas()
 	}
 }
 
-
-
-
 class ConwayMap
 {
 	constructor(objectInfo)
