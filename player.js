@@ -142,7 +142,6 @@ class ConwayMap
 		for (var x = 0; x < dataString.length; x++)
 		{
 			var k = dataString.charAt(x);
-			console.log(k);
 			if (k == "b") i++;
 			else if (k == "o")
 			{

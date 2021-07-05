@@ -12,16 +12,22 @@ async function init()
 			trSqObjs.push(key);
 		}
 	}
-	var cards = document.getElementsByClassName("rowTrSq")[0].getElementsByTagName("a");
-	for (var i = 0; i < cards.length; i++)
+	for (var i = 0; i < trSqObjs.length; i++)
 	{
-		var card = cards[i];
-		card.getElementsByClassName("cardtitle")[0].innerHTML = objectData.objects[trSqObjs[i]].name;
-		card.style.background = "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(img/" + trSqObjs[i] + ".jpg)";
+		var card = document.createElement("a");
+		var text = document.createElement("span");
+		text.innerHTML = objectData.objects[trSqObjs[i]].name;
+		text.className = "cardtitle";
+		card.className = "card";
+		card.id = "card" + i;
+		card.style.background = "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('img/" + objectData.objects[trSqObjs[i]].environment.tiling + ".png')";
 		card.style.backgroundPosition = "center top";
 		card.style.backgroundRepeat = "no-repeat";
 		card.style.backgroundSize = "cover";
 		card.href = "automaTile.html?id=" + trSqObjs[i];
+		document.getElementsByClassName("rowTrSq")[0].appendChild(card);
+		card.appendChild(text);
+
 	}
 
 }

@@ -33,6 +33,23 @@
 			"info": "obo$2o$bo",
 			"type": "Oscillator",
 			"period": "4"
+		},
+		"_27588362": {
+			"name": "Capsizer",
+			"environment": {
+				"tiling": "Truncated Square",
+				"rule": "B3/S23"
+			},
+			"camera": {
+				"slideX": 0,
+				"slideY": 0,
+				"scale": 50,
+				"initOffsetX": 375,
+				"initOffsetY": 150
+			},
+			"info": "obobo$3o$5o",
+			"type": "Oscillator",
+			"period": "10"
 		}
 	}
 }
