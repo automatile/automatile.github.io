@@ -58,3 +58,37 @@ canvas {
 	margin: 20px;
 	list-style-type: none;
 }
+.row {
+	display: grid;
+	padding: 20px;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: 1fr 0;
+	height: 15vh;
+}
+.rowtitle {
+	padding-top: 20px;
+	padding-left: 50px;
+	color: var(--text-color);
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	display: block;
+	text-align: left;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:#888888;
+	border-radius: 5px;
+}
+.cardtitle {
+	color: var(--text-color);
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	display: block;
+	text-align: center;
+}
