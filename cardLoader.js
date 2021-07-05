@@ -6,10 +6,10 @@ async function init()
 	await fetch('./object.json').then(response => response.text()).then((data) => { objectData = JSON.parse(data); });
 	for (var key in objectData.objects)
 	{
-
 		if (objectData.objects[key].environment.tiling == "Truncated Square")
 		{
 			trSqObjs.push(key);
+			console.log(key);
 		}
 	}
 	for (var i = 0; i < trSqObjs.length; i++)
@@ -26,8 +26,7 @@ async function init()
 		card.style.backgroundSize = "cover";
 		card.href = "automaTile.html?id=" + trSqObjs[i];
 		document.getElementsByClassName("rowTrSq")[0].appendChild(card);
-		card.appendChild(text);
-
+		document.getElementsByClassName("rowTrSq")[0].getElementsByTagName("a")[i].appendChild(text);
 	}
 
 }
